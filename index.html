@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motos Store - Merchandising Oficial</title>
+    <link rel="stylesheet" href="estiloo2.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Motos <span>STORE</span></h1>
+        </div>
+        <div id="cart-icon">
+            🛒 Mi Carrito <span id="cart-count">0</span>
+        </div>
+    </header>
+    
+    <main>
+        <section id="productos">
+           
+            <div class="grid-productos">
+                <div class="card">
+                    <img src="haya.jpg" alt="Hayabusa 1300">
+                    <h3>Hayabusa 1300</h3>
+                    <p class="precio">$19.499</p>
+                    <button class="add-to-cart" data-id="1" data-name="Hayabusa 1300" data-price="19.499">Añadir al carrito</button>
+                </div>
+                
+                <div class="card">
+                    <img src="ducati.jpg" alt="Ducati">
+                    <h3>Ducati panigale v4</h3>
+                    <p class="precio">$35.995</p>
+                    <button class="add-to-cart" data-id="2" data-name="Ducati panigale v4" data-price="35.995">Añadir al carrito</button>
+                </div>
+                
+                <div class="card">
+                    <img src="26a867d78b6e5b900d9ec13e192e7634.jpg" alt="Suzuki">
+                    <h3>GSX-R1000R</h3>
+                    <p class="precio">$34.900</p>
+                    <button class="add-to-cart" data-id="3" data-name="Suzuki GSX-R1000R" data-price="34.900">Añadir al carrito</button>
+                </div>
+
+                <div class="card">
+                    <img src="images.jpg" alt="kawasaki ninja H2r">
+                    <h3>Kawasaki ninja H2r</h3>
+                    <p class="precio">$64.300</p>
+                    <button class="add-to-cart" data-id="4" data-name="kawasaki ninja H2r" data-price="64.300">Añadir al carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sidebar del carrito -->
+        <aside id="carrito" class="oculto">
+            <div class="carrito-header">
+                <h2>Tu Carrito</h2>
+                <button id="cerrar-carrito">✕</button>
+            </div>
+            <ul id="lista-carrito">
+                <!-- Los items se renderizan acá por JS -->
+            </ul>
+            <div class="carrito-footer">
+                <p>Total: $<span id="total-precio">0.00</span></p>
+                <button id="checkout">Finalizar Compra</button>
+            </div>
+        </aside>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
